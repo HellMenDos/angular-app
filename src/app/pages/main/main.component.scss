@@ -1,0 +1,14 @@
+.list_cards {
+  max-width: var(--main-max-width);
+  width: 100%;
+  margin: 0 auto;
+  .list_cards_title {
+    font-family: "NunitoSansBold";
+    font-size: 30px;
+    padding: 10px;
+  }
+  .list_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

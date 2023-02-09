@@ -1,0 +1,25 @@
+section {
+  background: var(--main-color);
+  font-family: "NunitoSansBold";
+  margin-top: 4rem;
+  .footer_inner {
+    max-width: var(--main-max-width);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__name {
+      margin: 12px;
+      font-size: 25px;
+      color: white;
+    }
+  }
+
+}
+
+
+
+
+

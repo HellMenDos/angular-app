@@ -1,0 +1,21 @@
+button {
+  margin: 0px auto;
+  padding: 20px 40px;
+  border: 0;
+  border: 1px solid rgba(9,102,170,.15);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.filled {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.common {
+  background: white;
+  color: var(--main-color);
+}
+

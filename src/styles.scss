@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #292e3c;
+  --main-max-width: 1300px;
+}
+
+@font-face {
+  font-family: "NunitoSansBlack";
+  src: local("NunitoSans-Black"), url(./assets/fonts/Nunito_Sans/NunitoSans-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSansBold";
+  src: local("NunitoSansBold"), url(./assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSansRegular";
+  src: local("NunitoSansRegular"), url(./assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf) format("truetype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* UI LIB */
+.display-flex {
+  display: flex;
+}
+.width-50 {
+  width: 50%;
+}
+

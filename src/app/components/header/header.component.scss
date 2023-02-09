@@ -1,0 +1,40 @@
+section {
+  background: var(--main-color);
+  font-family: "NunitoSansBold";
+
+  .header_inner {
+    max-width: var(--main-max-width);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__name {
+      margin: 12px;
+      font-size: 25px;
+      color: white;
+    }
+
+    .header_nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 250px;
+      width: 100%;
+
+      .header_item {
+        color: white;
+        font-family: "NunitoSansRegular";
+
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
