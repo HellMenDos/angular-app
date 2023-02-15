@@ -1,21 +1,51 @@
 <app-header></app-header>
 
 <main>
-  <div class="auth_form">
+  <div class="auth_form" *ngIf="currentOperation == 1">
     <div class="auth_form_title">Вход</div>
     <div class="auth_form_group">
       <app-input placeholder="E-mail"></app-input>
       <app-input placeholder="Пароль"></app-input>
-      <app-button value="Отправить"></app-button>
+      <div class="other_operations">
+        <div class="forget" (click)="chnageOperation(3)">Забыли пароль ?</div>
+        <div class="signup" (click)="chnageOperation(2)">Регистрация</div>
+      </div>
+      <app-button value="Войти" (click)="navigate('')"></app-button>
     </div>
   </div>
 
+  <div class="auth_form" *ngIf="currentOperation == 2">
+    <div class="auth_form_title">Регистрация</div>
+    <div class="auth_form_group">
+      <app-input placeholder="E-mail"></app-input>
+      <app-input placeholder="ФИО"></app-input>
+      <app-input placeholder="Номер телефона"></app-input>
+      <app-input placeholder="Пароль"></app-input>
+      <div class="other_operations">
+        <div class="forget" (click)="chnageOperation(3)">Забыли пароль ?</div>
+        <div class="login" (click)="chnageOperation(1)">Вход</div>
+      </div>
+      <app-button value="Зарегестрироваться" (click)="navigate('')"></app-button>
+    </div>
+  </div>
+
+  <div class="auth_form" *ngIf="currentOperation == 3">
+    <div class="auth_form_title">Восстановление пароля</div>
+    <div class="auth_form_group">
+      <app-input placeholder="E-mail"></app-input>
+      <div class="other_operations">
+        <div class="signup" (click)="chnageOperation(2)">Регистрация</div>
+        <div class="login" (click)="chnageOperation(1)">Вход</div>
+      </div>
+      <app-button value="Восстановить" (click)="navigate('')"></app-button>
+    </div>
+  </div>
   <div class="banner_block">
     <div class="banner_block_inner">
       <div class="banner_block_title">Станьте партнером <br/>PMP ESTATE</div>
       <div class="banner_block_describe">
         <p>Наш сервис упрощает работу риелторам и позволяет зарабатывать дополнительно до 50 000 руб. на каждой сделке.</p>
-        <app-button value="Отправить" type="common" class="display-flex width-50"></app-button>
+        <app-button value="Отправить" type="common" class="display-flex width-50" (click)="navigate('')"></app-button>
       </div>
     </div>
   </div>

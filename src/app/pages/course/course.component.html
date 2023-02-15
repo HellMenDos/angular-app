@@ -1,2 +1,40 @@
 <app-login-header></app-login-header>
-<div>22</div>
+<main>
+  <div class="course_tabs_nav">
+    <div [class]="classItem(1)" (click)="setTab(1)">Видео</div>
+    <div [class]="classItem(2)" (click)="setTab(2)">Тесты</div>
+    <div [class]="classItem(3)" (click)="setTab(3)">Связь</div>
+    <div [class]="classItem(4)" (click)="setTab(4)">Запись на собеседование</div>
+    <div [class]="classItem(5)" (click)="setTab(5)">Скачать сертификат</div>
+
+  </div>
+  <div class="tabs_content">
+    <div *ngIf="currentTab == 1">
+      <app-video-list></app-video-list>
+    </div>
+    <div *ngIf="currentTab == 2">
+      <app-test-list></app-test-list>
+    </div>
+    <div *ngIf="currentTab == 3">
+      <div class="center">
+        <div class="text-bold">Связаться с нами</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad eos pariatur, deleniti nostrum qui officia tempore tenetur excepturi optio distinctio?</div>
+        <app-button value="Связь"></app-button>
+      </div>
+    </div>
+    <div *ngIf="currentTab == 4">
+      <div class="center">
+        <div class="text-bold">Записаться на собеседование</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad eos pariatur, deleniti nostrum qui officia tempore tenetur excepturi optio distinctio?</div>
+        <app-button value="Запись"></app-button>
+      </div>
+    </div>
+    <div *ngIf="currentTab == 5">
+      <div class="center">
+        <div class="text-bold">Скачать сертификат</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad eos pariatur, deleniti nostrum qui officia tempore tenetur excepturi optio distinctio?</div>
+        <app-button value="скачать"></app-button>
+      </div>
+    </div>
+  </div>
+</main>

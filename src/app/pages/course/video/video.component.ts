@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-header',
-  templateUrl: './login-header.component.html',
-  styleUrls: ['./login-header.component.scss']
+  selector: 'app-video',
+  templateUrl: './video.component.html',
+  styleUrls: ['./video.component.scss']
 })
-export class LoginHeaderComponent implements OnInit {
+export class VideoComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -15,5 +15,4 @@ export class LoginHeaderComponent implements OnInit {
   navigate(route: string) {
     this.router.navigate([`/${route}`]);
   }
-
 }

@@ -1,9 +1,9 @@
 <section>
   <div class="header_inner">
-    <div class="header__name">A-LIT КУРСЫ</div>
+    <div class="header__name" (click)="navigate('')">A-LIT КУРСЫ</div>
     <div class="header_nav">
-      <div class="header_item">Данные</div>
-      <div class="header_item">Выход</div>
+      <div class="header_item" (click)="navigate('profile')">Данные</div>
+      <div class="header_item" (click)="navigate('auth')">Выход</div>
     </div>
   </div>
 </section>

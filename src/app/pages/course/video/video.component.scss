@@ -1,0 +1,28 @@
+main {
+  max-width: var(--main-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+.text-about-title {
+  font-size: 30px;
+  font-family: "NunitoSansBold";
+}
+.text-about-describe {
+  font-size: 18px;
+  font-family: "NunitoSansRegular";
+}
+.video {
+  background-color: black;
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+}
+.button-container {
+  display: flex;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  app-button {
+    margin-right: 10px;
+  }
+}

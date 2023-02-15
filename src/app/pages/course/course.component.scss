@@ -1,0 +1,41 @@
+main {
+  max-width: var(--main-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+.item_active {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  font-family: "NunitoSansBold";
+  font-weight: bold;
+}
+.course_tabs_item {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: "NunitoSansRegular";
+
+}
+.course_tabs_nav {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.center {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "NunitoSansRegular";
+  box-shadow: rgb(32 57 106 / 15%) 0px 8px 30px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.text-bold {
+  font-family: "NunitoSansBold";
+  font-size: 24px;
+  text-align: center;
+}

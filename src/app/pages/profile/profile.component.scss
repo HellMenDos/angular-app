@@ -1,0 +1,19 @@
+main {
+  font-family: "NunitoSansBold";
+  max-width: var(--main-max-width);
+  width: 100%;
+  margin: 0 auto;
+
+  .profile_form {
+    width: 100%;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 8.5rem;
+
+    .profile_form_title {
+      text-align: center;
+    }
+  }
+}

@@ -14,6 +14,7 @@ section {
       margin: 12px;
       font-size: 25px;
       color: white;
+      cursor: pointer;
     }
 
     .header_nav {
@@ -22,11 +23,13 @@ section {
       justify-content: space-between;
       max-width: 150px;
       width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
 
       .header_item {
         color: white;
         font-family: "NunitoSansRegular";
-
+        cursor: pointer;
       }
 
     }
